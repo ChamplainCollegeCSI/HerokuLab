@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Heroku Lab</title>
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Hakim El Hattab">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/default.css" id="theme">
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+        </script>
+        <!--[if lt IE 9]>
+            <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <style>
+            .glyph {
+                font-family: SymblyRegular !important;
+                text-decoration: none !important;
+                text-transform: none !important;
+            }
+            .big {
+                font-size: 3em !important;
+                clear: both !important;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="reveal">
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                   <section><h1>Heroku Lab</h1>
+				   <img src=https://d4yt8xl9b7in.cloudfront.net/assets/logo-537c330ed59a42305b70bfa628bac079.png >
+				   </section>
+				   <section>
+				   <h1>Objective:</h1>
+				   <p>
+				   Deploy a "Hello JSON" node.js application to Heroku from Github via Cloud9.
+				   <p>
+				   </section>
+				   <section>
+				   <h1>Create a Github account</h1>
+				   <p>You should already have one!</p>
+				   <h3>github.com</h3>
+				   </section>
+				   <section>
+				   <h1>Sign into c9 via your Github account</h1>
+				   </section>
+				   <section>
+				   <h1>Create a heroku.com account</h1>
+				   </section>
+				   <section>
+				   <h1>How it works (Easy)</h1>
+				   <a href=https://docs.c9.io/deploying_to_heroku.html >Tutorial</a>
+				   <p> Github to C9 to Heroku </p>
+				   </section>
+				   <section>
+				   <h1>How it works (Advanced)</h1>
+				   <a href=https://devcenter.heroku.com/articles/git >Tutorial</a>
+				   <p> Github push to Heroku remote</p>
+				   </section>
+				   <section>
+				   <h1>Your Mission:</h1>
+				   <p>
+				   Return the json object via node.js hosted on Heroku.com. Submit your github repository url and your hosted heroku url via Canvas.
+				   </p>
+				   </section>
+				   <section>
+				   <h1>JSON:</h1>
+				   <pre><code>{
+"name" : "Al Ramirez",
+"vacation" : {
+	"places": ["45.64, -73.63","40.760, -73.973","32.750, -117.07"]
+	}
+}</code></pre>
+<h3><i>hint: res.json not res.send</i></h3>
+				   </section>
+				   
+                </section>
+            </div>
+        </div>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+        <script>
+            // Full list of configuration options available here:
+             // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [{
+                        src: 'lib/js/classList.js',
+                        condition: function() {
+                            return !document.body.classList;
+                        }
+                    }, {
+                        src: 'plugin/markdown/marked.js',
+                        condition: function() {
+                            return !!document.querySelector('[data-markdown]');
+                        }
+                    }, {
+                        src: 'plugin/markdown/markdown.js',
+                        condition: function() {
+                            return !!document.querySelector('[data-markdown]');
+                        }
+                    }, {
+                        src: 'plugin/highlight/highlight.js',
+                        async: true,
+                        callback: function() {
+                            hljs.initHighlightingOnLoad();
+                        }
+                    }, {
+                        src: 'plugin/zoom-js/zoom.js',
+                        async: true,
+                        condition: function() {
+                            return !!document.body.classList;
+                        }
+                    }, {
+                        src: 'plugin/notes/notes.js',
+                        async: true,
+                        condition: function() {
+                            return !!document.body.classList;
+                        }
+                    }
+                ]
+            });
+        </script>
+    </body>
+
+</html>
